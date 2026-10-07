@@ -209,7 +209,7 @@ button, input { font: inherit; }
   color: var(--paper);
 }
 .preloader__inner { display: flex; flex-direction: column; align-items: center; gap: 22px; }
-.preloader__logo { width: 96px; height: auto; opacity: 0; }
+.preloader__logo { width: 135px; height: auto; opacity: 0; }
 .preloader__name {
   display: block; overflow: hidden;
   font-family: var(--display); font-size: 15px; letter-spacing: 0.02em;
