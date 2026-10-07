@@ -102,6 +102,7 @@ button, input { font: inherit; }
   background: var(--line-dark);
   transform-origin: left center;
 }
+.rule--light { background: rgba(244, 242, 236, 0.16); }
 
 /* Links & buttons */
 .link-line {
