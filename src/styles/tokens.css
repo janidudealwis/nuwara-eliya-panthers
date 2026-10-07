@@ -1,0 +1,30 @@
+:root {
+  /* Palette */
+  --forest: #07100C;
+  --forest-2: #0E1E17;
+  --deep: #050C09;
+  --ink: #0B1712;
+  --ivory: #F3F1EA;
+  --paper: #F4F2EC;
+  --gold: #D9CBA3;
+  --gold-dark: #8A7A4E;
+  --green: #0B4A32;
+  --text-2: #3A4A42;
+  --text-3: #4A5A52;
+  --text-4: #6B786F;
+  --line-dark: rgba(11, 23, 18, 0.16);
+  --line-light: rgba(255, 255, 255, 0.14);
+
+  /* Type */
+  --display: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --max: 1360px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --section-y: clamp(112px, 14vw, 180px);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}

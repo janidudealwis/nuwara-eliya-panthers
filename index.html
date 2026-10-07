@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuwara Eliya Panthers — Above the Ordinary</title>
+  <meta name="description" content="A private golf club in Sri Lanka's hill country, for those who play with patience and precision.">
+  <link rel="icon" type="image/png" href="/images/panthers-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap">
+  <link rel="preload" as="image" href="/images/hero-hills.jpg">
+  <script>
+    // Hide animated elements only when JS runs and motion is allowed (no-JS shows everything)
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-anim');
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <img class="preloader__logo" src="/images/panthers-logo.png" alt="">
+    <span class="preloader__name"><span>Nuwara Eliya Panthers</span></span>
+    <div class="preloader__bar"><span></span></div>
+    <span class="preloader__count">000</span>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label">View</span></span></div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Main">
+    <a href="#top" class="nav__brand">
+      <img src="/images/panthers-logo.png" alt="">
+      <span>Nuwara Eliya Panthers</span>
+    </a>
+    <div class="nav__links">
+      <a href="#club" class="nav__link"><span data-text="Club">Club</span></a>
+      <a href="#course" class="nav__link"><span data-text="Course">Course</span></a>
+      <a href="#experiences" class="nav__link"><span data-text="Experiences">Experiences</span></a>
+      <a href="#events" class="nav__link"><span data-text="Calendar">Calendar</span></a>
+      <a href="#membership" class="nav__cta" data-magnetic>Membership</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero__media">
+    <img src="/images/hero-hills.jpg" alt="Golfer overlooking misty hills">
+  </div>
+  <div class="hero__shade"></div>
+
+  <div class="hero__content">
+    <p class="eyebrow hero__eyebrow">Est. [YEAR] · Nuwara Eliya</p>
+    <h1 class="hero__title" data-hero-title>
+      <span class="line"><span class="line-inner">Above</span></span>
+      <span class="line"><span class="line-inner">the Ordinary</span></span>
+    </h1>
+    <div class="hero__rule"></div>
+    <p class="hero__lead">A private golf club in Sri Lanka's hill country, for those who play with patience and precision.</p>
+    <a href="#membership" class="btn-glass hero__cta" data-magnetic>
+      <span>Request an invitation</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <div class="hero__stats-wrap">
+    <div class="hero__stats glass">
+      <div class="stat"><span class="stat__label">Elevation</span><span class="stat__value">[0,000] m</span></div>
+      <div class="stat"><span class="stat__label">The course</span><span class="stat__value">[18] holes · Par [00]</span></div>
+      <div class="stat"><span class="stat__label">Membership</span><span class="stat__value">By invitation</span></div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+</header>
+
+<!-- CLUB -->
+<section id="club" class="club container">
+  <div class="club__intro">
+    <span class="kicker" data-reveal="up">I — The Club</span>
+    <p class="club__statement" data-words>We built the Panthers around a simple belief: golf rewards patience, precision and respect. So does a great club.</p>
+  </div>
+  <div class="club__body">
+    <div class="club__media" data-reveal="image" data-cursor="View">
+      <img src="/images/still-life.jpg" alt="Golf iron, glove, ball and tee on green felt" data-inner>
+      <div class="club__card glass" data-reveal="up">
+        <span class="club__card-title">Every detail considered</span>
+        <span class="club__card-text">From tee to clubhouse, nothing is left to chance.</span>
+      </div>
+    </div>
+    <div class="club__aside">
+      <p class="body-copy" data-reveal="up">Set in the cool highlands of Nuwara Eliya, the club is a place to sharpen your game, compete with purpose and belong to a community that holds itself to a higher standard. No noise, no excess. Only the game, played well.</p>
+      <ul class="values" data-stagger>
+        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Discipline</span><span class="values__note">On every shot</span></li>
+        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Precision</span><span class="values__note">In every decision</span></li>
+        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Belonging</span><span class="values__note">To one Panthers family</span></li>
+        <li class="values__end"><i class="rule" data-reveal="rule"></i></li>
+      </ul>
+      <a href="#course" class="link-line" data-reveal="up">Explore the course</a>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section id="course" class="course dark">
+  <div class="orb orb--green" aria-hidden="true"></div>
+  <div class="orb orb--gold" aria-hidden="true"></div>
+  <div class="container course__inner">
+    <div class="section-head">
+      <div class="section-head__title">
+        <span class="kicker kicker--light" data-reveal="up">II — The Course</span>
+        <h2 class="display display--xl" data-split>
+          <span class="line"><span class="line-inner">Played</span></span>
+          <span class="line"><span class="line-inner">in the Clouds</span></span>
+        </h2>
+      </div>
+      <p class="section-head__copy" data-reveal="up">Tree-lined fairways, cool mountain air and greens that ask for a careful hand. A course that rewards thinking as much as power.</p>
+    </div>
+    <div class="course__grid">
+      <figure class="frame" data-reveal="image" data-parallax="-0.06" data-cursor="View">
+        <img src="/images/golfer-walk.jpg" alt="Golfer walking toward the hills" data-inner>
+        <figcaption class="frame__cap glass"><span>The Walk</span><span>Front nine</span></figcaption>
+      </figure>
+      <div class="course__stats">
+        <div class="tile glass" data-reveal="up">
+          <span class="tile__label">Championship layout</span>
+          <span class="tile__num" data-count>[18]</span>
+          <span class="tile__text">Holes · Par [00] · [0,000] yards</span>
+        </div>
+        <div class="tile glass" data-reveal="up">
+          <span class="tile__label">Signature hole</span>
+          <span class="tile__num">No. [0]</span>
+          <span class="tile__text">[A short line on what makes it special.]</span>
+        </div>
+      </div>
+      <figure class="frame" data-reveal="image" data-parallax="0.08" data-cursor="View">
+        <img src="/images/hero-hills.jpg" alt="Mist over the hills beyond the course" style="object-position: 80% 50%" data-inner>
+        <figcaption class="frame__cap glass"><span>The View</span><span>Back nine</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="experiences container">
+  <div class="section-head">
+    <div class="section-head__title">
+      <span class="kicker" data-reveal="up">III — Experiences</span>
+      <h2 class="display display--lg" data-split>
+        <span class="line"><span class="line-inner">The Panther</span></span>
+        <span class="line"><span class="line-inner">Way</span></span>
+      </h2>
+    </div>
+    <p class="section-head__copy section-head__copy--dark" data-reveal="up">Four ways to belong, each held to the same quiet standard.</p>
+  </div>
+  <div class="exp-grid">
+    <i class="rule exp-grid__top" data-reveal="rule"></i>
+    <article class="exp">
+      <span class="exp__num"><span>I</span></span>
+      <h3 class="exp__title">Member Play</h3>
+      <p class="exp__text">Priority tee times and an unhurried course, shared with golfers who care about the game.</p>
+    </article>
+    <article class="exp">
+      <i class="vrule" aria-hidden="true"></i>
+      <span class="exp__num"><span>II</span></span>
+      <h3 class="exp__title">Tournaments</h3>
+      <p class="exp__text">A season of club competitions, from monthly medals to the annual championship.</p>
+    </article>
+    <article class="exp">
+      <i class="vrule" aria-hidden="true"></i>
+      <span class="exp__num"><span>III</span></span>
+      <h3 class="exp__title">Academy</h3>
+      <p class="exp__text">Coaching for juniors and adults, built on fundamentals and steady improvement.</p>
+    </article>
+    <article class="exp">
+      <i class="vrule" aria-hidden="true"></i>
+      <span class="exp__num"><span>IV</span></span>
+      <h3 class="exp__title">Clubhouse</h3>
+      <p class="exp__text">Dining, a fireside lounge and the view. A warm place to end the round.</p>
+    </article>
+  </div>
+</section>
+
+<!-- THE PANTHER CODE -->
+<section class="code dark" aria-label="The Panther Code">
+  <div class="code__media">
+    <img src="/images/still-life.jpg" alt="">
+  </div>
+  <div class="code__shade"></div>
+  <div class="code__card glass">
+    <img class="code__logo" src="/images/panthers-logo.png" alt="">
+    <p class="code__lines">
+      <span class="code__line">Patience is a strength.</span>
+      <span class="code__line">Precision is a habit.</span>
+      <span class="code__line">Respect is the rule.</span>
+    </p>
+    <span class="eyebrow code__label">The Panther Code</span>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="events container">
+  <div class="section-head section-head--row">
+    <div class="section-head__title">
+      <span class="kicker" data-reveal="up">IV — The Season</span>
+      <h2 class="display display--lg" data-split>
+        <span class="line"><span class="line-inner">Calendar</span></span>
+      </h2>
+    </div>
+    <a href="#events" class="link-line" data-reveal="up">Full season</a>
+  </div>
+  <div class="events__list">
+    <i class="rule" data-reveal="rule"></i>
+    <a class="event" href="#membership" aria-label="Monthly Medal details">
+      <span class="event__date">[DD MMM]</span>
+      <span class="event__name">[Monthly Medal]</span>
+      <span class="event__meta">[Members · Stroke play]</span>
+      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <i class="rule event__rule"></i>
+    </a>
+    <a class="event" href="#membership" aria-label="Junior Open Day details">
+      <span class="event__date">[DD MMM]</span>
+      <span class="event__name">[Junior Open Day]</span>
+      <span class="event__meta">[Academy · All levels]</span>
+      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <i class="rule event__rule"></i>
+    </a>
+    <a class="event" href="#membership" aria-label="Club Championship details">
+      <span class="event__date">[DD MMM]</span>
+      <span class="event__name">[Club Championship]</span>
+      <span class="event__meta">[Members · 36 holes]</span>
+      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <i class="rule event__rule"></i>
+    </a>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="membership" class="membership dark">
+  <div class="membership__media">
+    <img src="/images/golfer-walk.jpg" alt="">
+  </div>
+  <div class="membership__shade"></div>
+  <div class="container membership__inner">
+    <div class="membership__intro">
+      <span class="kicker kicker--light" data-reveal="up">V — Membership</span>
+      <h2 class="display display--xl" data-split>
+        <span class="line"><span class="line-inner">Join</span></span>
+        <span class="line"><span class="line-inner">the Pride</span></span>
+      </h2>
+      <p class="section-head__copy" data-reveal="up">Membership is by application. Leave your details and the membership committee will be in touch personally.</p>
+    </div>
+    <form class="apply glass" novalidate>
+      <div class="apply__fields">
+        <span class="apply__title">Request an invitation</span>
+        <div class="field">
+          <label for="nep-name">Full name</label>
+          <input id="nep-name" name="name" type="text" autocomplete="name" required>
+          <i class="field__line"></i>
+        </div>
+        <div class="field">
+          <label for="nep-email">Email</label>
+          <input id="nep-email" name="email" type="email" autocomplete="email" required>
+          <i class="field__line"></i>
+        </div>
+        <div class="field">
+          <label for="nep-hcp">Handicap (optional)</label>
+          <input id="nep-hcp" name="handicap" type="text" inputmode="decimal">
+          <i class="field__line"></i>
+        </div>
+        <p class="apply__error" role="alert" hidden>Please add your name and a valid email.</p>
+        <button type="submit" class="btn-solid" data-magnetic><span>Submit application</span></button>
+      </div>
+      <div class="apply__done" hidden>
+        <img src="/images/panthers-logo.png" alt="">
+        <span class="apply__title">Thank you.</span>
+        <p>Your application has been received. The membership committee will be in touch personally.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <img class="footer__logo" src="/images/panthers-logo.png" alt="Nuwara Eliya Panthers" data-reveal="up">
+      <div class="footer__cols">
+        <div class="footer__col" data-reveal="up"><span class="footer__head">Club</span><a href="#club">About</a><a href="#course">Course</a><a href="#experiences">Experiences</a><a href="#events">Calendar</a></div>
+        <div class="footer__col" data-reveal="up"><span class="footer__head">Visit</span><span>[ADDRESS]</span><span>Nuwara Eliya, Sri Lanka</span><span>[PHONE]</span></div>
+        <div class="footer__col" data-reveal="up"><span class="footer__head">Follow</span><a href="#top">Instagram</a><a href="#top">Facebook</a></div>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">PANTHERS</p>
+    <div class="footer__bottom">
+      <span>© 2026 Nuwara Eliya Panthers</span>
+      <a href="#top" class="footer__top-link">Back to top ↑</a>
+      <span>www.nuwaraeliyapanthers.lk</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
