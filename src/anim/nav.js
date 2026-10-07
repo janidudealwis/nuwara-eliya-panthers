@@ -3,19 +3,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { isFinePointer } from './utils.js';
 
 export function initNav() {
-  const wrap = document.querySelector('.nav-wrap');
   const nav = document.querySelector('.nav');
 
-  // Hide while scrolling down, return on the way up
-  const hide = gsap.to(wrap, { yPercent: -160, duration: 0.9, ease: 'expo.out', paused: true });
-  ScrollTrigger.create({
-    start: 'top+=200 top',
-    end: 'max',
-    onUpdate: (self) => (self.direction === 1 ? hide.play() : hide.reverse()),
-    onLeaveBack: () => hide.reverse(),
-  });
-
-  // Deepen the glass once we're past the hero
+  // Stays fixed and visible at all times — only its glass tint deepens past the hero
   ScrollTrigger.create({
     trigger: '#club',
     start: 'top 90px',
