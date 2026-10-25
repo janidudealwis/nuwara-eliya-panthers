@@ -57,7 +57,6 @@ button, input { font: inherit; }
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(22px) saturate(140%);
-  -webkit-backdrop-filter: blur(22px) saturate(140%);
 }
 
 /* Type helpers */
@@ -142,7 +141,6 @@ button, input { font: inherit; }
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   font-size: 14px;
   color: var(--paper);
   overflow: hidden;
