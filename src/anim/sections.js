@@ -8,7 +8,6 @@ export function initSections(mm) {
   experiences();
   code(mm);
   events();
-  membership();
   footer();
 }
 
@@ -84,43 +83,6 @@ function events() {
     const tl = gsap.timeline({ scrollTrigger: { trigger: row, start: 'top 90%', once: true } });
     tl.fromTo(row.querySelector('.event__rule'), { scaleX: 0 }, { scaleX: 1, duration: 1.8, ease: 'expo.inOut' }, 0)
       .fromTo(parts, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1.3, ease: 'expo.out', stagger: 0.08 }, 0.25);
-  });
-}
-
-function membership() {
-  gsap.fromTo('.membership__media', { yPercent: -8 }, {
-    yPercent: 8, ease: 'none',
-    scrollTrigger: { trigger: '.membership', start: 'top bottom', end: 'bottom top', scrub: true },
-  });
-
-  const tl = gsap.timeline({ scrollTrigger: { trigger: '.apply', start: 'top 82%', once: true } });
-  tl.fromTo('.apply', { opacity: 0, y: 80, rotateX: 8, transformPerspective: 1200 }, { opacity: 1, y: 0, rotateX: 0, duration: 1.6, ease: 'expo.out' })
-    .fromTo('.apply__title, .apply .field, .apply .btn-solid', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 1.2, ease: 'expo.out', stagger: 0.09 }, 0.3);
-
-  bindForm();
-}
-
-function bindForm() {
-  const form = document.querySelector('.apply');
-  const fields = form.querySelector('.apply__fields');
-  const done = form.querySelector('.apply__done');
-  const error = form.querySelector('.apply__error');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = form.elements.name.value.trim();
-    const email = form.elements.email.value.trim();
-    if (!name || !/^\S+@\S+\.\S+$/.test(email)) {
-      error.hidden = false;
-      gsap.fromTo(error, { opacity: 0, y: -6 }, { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out' });
-      gsap.fromTo(form, { x: -8 }, { x: 0, duration: 0.8, ease: 'elastic.out(1, 0.3)' });
-      return;
-    }
-    error.hidden = true;
-    gsap.timeline()
-      .to(fields.children, { opacity: 0, y: -20, duration: 0.6, ease: 'power3.in', stagger: 0.04 })
-      .add(() => { fields.hidden = true; done.hidden = false; })
-      .fromTo(done.children, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1.3, ease: 'expo.out', stagger: 0.12 });
   });
 }
 

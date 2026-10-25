@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuwara Eliya Panthers — Above the Ordinary</title>
-  <meta name="description" content="A private golf club in Sri Lanka's hill country, for those who play with patience and precision.">
+  <title>Nuwara Eliya Panthers — Ceylon Golf League Champions</title>
+  <meta name="description" content="Nuwara Eliya Panthers, inaugural Ceylon Golf League champions (2025). Meet the squad, the coaching staff and the owners, and follow the title defence in January 2027.">
   <link rel="icon" type="image/png" href="/images/panthers-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap">
-  <link rel="preload" as="image" href="/images/hero-hills.jpg">
+  <link rel="preload" as="image" href="/images/hero-champions.jpg">
   <script>
     // Hide animated elements only when JS runs and motion is allowed (no-JS shows everything)
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-anim');
@@ -17,6 +17,14 @@
   <script type="module" src="/src/main.js"></script>
 </head>
 <body>
+
+<!-- Shared placeholder portrait for profile cards -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ph" viewBox="0 0 200 250">
+    <circle cx="100" cy="92" r="38" fill="currentColor"/>
+    <path d="M28 250c0-48 32-86 72-86s72 38 72 86z" fill="currentColor"/>
+  </symbol>
+</svg>
 
 <!-- PRELOADER -->
 <div class="preloader" aria-hidden="true">
@@ -39,11 +47,11 @@
       <span>Nuwara Eliya Panthers</span>
     </a>
     <div class="nav__links">
-      <a href="#club" class="nav__link"><span data-text="Club">Club</span></a>
-      <a href="#course" class="nav__link"><span data-text="Course">Course</span></a>
-      <a href="#experiences" class="nav__link"><span data-text="Experiences">Experiences</span></a>
-      <a href="#events" class="nav__link"><span data-text="Calendar">Calendar</span></a>
-      <a href="#membership" class="nav__cta" data-magnetic>Membership</a>
+      <a href="#team" class="nav__link"><span data-text="Team">Team</span></a>
+      <a href="#champions" class="nav__link"><span data-text="Champions">Champions</span></a>
+      <a href="#format" class="nav__link"><span data-text="Format">Format</span></a>
+      <a href="#squad" class="nav__link"><span data-text="Squad">Squad</span></a>
+      <a href="#season" class="nav__cta" data-magnetic>Season 2</a>
     </div>
   </nav>
 </div>
@@ -53,146 +61,402 @@
 <!-- HERO -->
 <header id="top" class="hero">
   <div class="hero__media">
-    <img src="/images/hero-hills.jpg" alt="Golfer overlooking misty hills">
+    <img src="/images/hero-champions.jpg" alt="Nuwara Eliya Panthers lifting the Ceylon Golf League trophy under stage lights and confetti">
   </div>
   <div class="hero__shade"></div>
 
   <div class="hero__content">
-    <p class="eyebrow hero__eyebrow">Est. [YEAR] · Nuwara Eliya</p>
+    <p class="eyebrow hero__eyebrow">Ceylon Golf League · Champions 2025</p>
     <h1 class="hero__title" data-hero-title>
-      <span class="line"><span class="line-inner">Above</span></span>
-      <span class="line"><span class="line-inner">the Ordinary</span></span>
+      <span class="line"><span class="line-inner">Kings of</span></span>
+      <span class="line"><span class="line-inner">the Hill Country</span></span>
     </h1>
     <div class="hero__rule"></div>
-    <p class="hero__lead">A private golf club in Sri Lanka's hill country, for those who play with patience and precision.</p>
-    <a href="#membership" class="btn-glass hero__cta" data-magnetic>
-      <span>Request an invitation</span>
+    <p class="hero__lead">The first champions of Sri Lanka's franchise golf league. Now the Panthers return to Royal Colombo to defend the crown.</p>
+    <a href="#squad" class="btn-glass hero__cta" data-magnetic>
+      <span>Meet the squad</span>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
 
   <div class="hero__stats-wrap">
     <div class="hero__stats glass">
-      <div class="stat"><span class="stat__label">Elevation</span><span class="stat__value">[0,000] m</span></div>
-      <div class="stat"><span class="stat__label">The course</span><span class="stat__value">[18] holes · Par [00]</span></div>
-      <div class="stat"><span class="stat__label">Membership</span><span class="stat__value">By invitation</span></div>
+      <div class="stat"><span class="stat__label">CGL 2025</span><span class="stat__value">Champions</span></div>
+      <div class="stat"><span class="stat__label">League points</span><span class="stat__value">24 · Season high</span></div>
+      <div class="stat"><span class="stat__label">Title defence</span><span class="stat__value">8–10 Jan 2027</span></div>
     </div>
   </div>
 
   <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
 </header>
 
-<!-- CLUB -->
-<section id="club" class="club container">
+<!-- TEAM -->
+<section id="team" class="club container">
   <div class="club__intro">
-    <span class="kicker" data-reveal="up">I — The Club</span>
-    <p class="club__statement" data-words>We built the Panthers around a simple belief: golf rewards patience, precision and respect. So does a great club.</p>
+    <span class="kicker" data-reveal="up">I — The Team</span>
+    <p class="club__statement" data-words>Golf rewards patience, precision and respect. In the league's first season, the Panthers had all three, and finished on top.</p>
   </div>
   <div class="club__body">
     <div class="club__media" data-reveal="image" data-cursor="View">
       <img src="/images/still-life.jpg" alt="Golf iron, glove, ball and tee on green felt" data-inner>
       <div class="club__card glass" data-reveal="up">
-        <span class="club__card-title">Every detail considered</span>
-        <span class="club__card-text">From tee to clubhouse, nothing is left to chance.</span>
+        <span class="club__card-title">Captain Tharanga Gunasekera</span>
+        <span class="club__card-text">Led the Panthers to the inaugural Ceylon Golf League title in December 2025.</span>
       </div>
     </div>
     <div class="club__aside">
-      <p class="body-copy" data-reveal="up">Set in the cool highlands of Nuwara Eliya, the club is a place to sharpen your game, compete with purpose and belong to a community that holds itself to a higher standard. No noise, no excess. Only the game, played well.</p>
+      <p class="body-copy" data-reveal="up">The Nuwara Eliya Panthers carry the hill country into the Ceylon Golf League, Sri Lanka's first franchise golf tournament. The league was founded by Mahela Jayawardene, Shamal Perera and Suhayb Sangani. Eight city franchises draft their squads at auction across seven handicap categories, then meet over three days of team match play.</p>
       <ul class="values" data-stagger>
         <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Discipline</span><span class="values__note">On every shot</span></li>
-        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Precision</span><span class="values__note">In every decision</span></li>
-        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Belonging</span><span class="values__note">To one Panthers family</span></li>
+        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Composure</span><span class="values__note">When the match is tight</span></li>
+        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Belonging</span><span class="values__note">To one Panthers pride</span></li>
         <li class="values__end"><i class="rule" data-reveal="rule"></i></li>
       </ul>
-      <a href="#course" class="link-line" data-reveal="up">Explore the course</a>
+      <a href="#champions" class="link-line" data-reveal="up">The 2025 title run</a>
     </div>
   </div>
 </section>
 
-<!-- COURSE -->
-<section id="course" class="course dark">
+<!-- CHAMPIONS -->
+<section id="champions" class="course dark">
   <div class="orb orb--green" aria-hidden="true"></div>
   <div class="orb orb--gold" aria-hidden="true"></div>
   <div class="container course__inner">
     <div class="section-head">
       <div class="section-head__title">
-        <span class="kicker kicker--light" data-reveal="up">II — The Course</span>
+        <span class="kicker kicker--light" data-reveal="up">II — Champions 2025</span>
         <h2 class="display display--xl" data-split>
-          <span class="line"><span class="line-inner">Played</span></span>
-          <span class="line"><span class="line-inner">in the Clouds</span></span>
+          <span class="line"><span class="line-inner">First to</span></span>
+          <span class="line"><span class="line-inner">the Crown</span></span>
         </h2>
       </div>
-      <p class="section-head__copy" data-reveal="up">Tree-lined fairways, cool mountain air and greens that ask for a careful hand. A course that rewards thinking as much as power.</p>
+      <p class="section-head__copy" data-reveal="up">Royal Colombo Golf Club, 5–7 December 2025. Seven rounds of foursomes, fourball and indies against seven other franchises. The Panthers finished with the most points in the league, six clear of runners-up Trinco Sharks on 18.</p>
     </div>
     <div class="course__grid">
       <figure class="frame" data-reveal="image" data-parallax="-0.06" data-cursor="View">
-        <img src="/images/golfer-walk.jpg" alt="Golfer walking toward the hills" data-inner>
-        <figcaption class="frame__cap glass"><span>The Walk</span><span>Front nine</span></figcaption>
+        <img src="/images/hero-champions.jpg" alt="The Panthers raising the trophy" style="object-position: 46% 50%" data-inner>
+        <figcaption class="frame__cap glass"><span>The Trophy</span><span>RCGC · Dec 2025</span></figcaption>
       </figure>
       <div class="course__stats">
         <div class="tile glass" data-reveal="up">
-          <span class="tile__label">Championship layout</span>
-          <span class="tile__num" data-count>[18]</span>
-          <span class="tile__text">Holes · Par [00] · [0,000] yards</span>
+          <span class="tile__label">League points</span>
+          <span class="tile__num" data-count>24</span>
+          <span class="tile__text">The highest total of the season</span>
         </div>
         <div class="tile glass" data-reveal="up">
-          <span class="tile__label">Signature hole</span>
-          <span class="tile__num">No. [0]</span>
-          <span class="tile__text">[A short line on what makes it special.]</span>
+          <span class="tile__label">Record</span>
+          <span class="tile__num">3W · 2T</span>
+          <span class="tile__text">Three wins and two ties across seven rounds</span>
+        </div>
+        <div class="tile glass" data-reveal="up">
+          <span class="tile__label">Group stage</span>
+          <span class="tile__num" data-count>105</span>
+          <span class="tile__text">Points to finish top of Group B</span>
         </div>
       </div>
       <figure class="frame" data-reveal="image" data-parallax="0.08" data-cursor="View">
-        <img src="/images/hero-hills.jpg" alt="Mist over the hills beyond the course" style="object-position: 80% 50%" data-inner>
-        <figcaption class="frame__cap glass"><span>The View</span><span>Back nine</span></figcaption>
+        <img src="/images/golfer-walk.jpg" alt="Golfer walking toward the hills" data-inner>
+        <figcaption class="frame__cap glass"><span>The Hill Country</span><span>Home of the Panthers</span></figcaption>
       </figure>
+    </div>
+    <div class="champ-note glass" data-reveal="up">
+      <span class="champ-note__label">Beyond the trophy</span>
+      <p class="champ-note__text">The Panthers gave their entire prize purse to national flood relief.</p>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCES -->
-<section id="experiences" class="experiences container">
+<!-- FORMAT -->
+<section id="format" class="experiences container">
   <div class="section-head">
     <div class="section-head__title">
-      <span class="kicker" data-reveal="up">III — Experiences</span>
+      <span class="kicker" data-reveal="up">III — The Format</span>
       <h2 class="display display--lg" data-split>
-        <span class="line"><span class="line-inner">The Panther</span></span>
-        <span class="line"><span class="line-inner">Way</span></span>
+        <span class="line"><span class="line-inner">Three Days,</span></span>
+        <span class="line"><span class="line-inner">One Crown</span></span>
       </h2>
     </div>
-    <p class="section-head__copy section-head__copy--dark" data-reveal="up">Four ways to belong, each held to the same quiet standard.</p>
+    <p class="section-head__copy section-head__copy--dark" data-reveal="up">Eight city franchises. Squads drafted at auction across seven handicap categories, in men's and women's divisions.</p>
   </div>
   <div class="exp-grid">
     <i class="rule exp-grid__top" data-reveal="rule"></i>
     <article class="exp">
       <span class="exp__num"><span>I</span></span>
-      <h3 class="exp__title">Member Play</h3>
-      <p class="exp__text">Priority tee times and an unhurried course, shared with golfers who care about the game.</p>
+      <h3 class="exp__title">Foursomes</h3>
+      <p class="exp__text">Day one. Two players, one ball, alternate shots. A test of partnership under pressure.</p>
     </article>
     <article class="exp">
       <i class="vrule" aria-hidden="true"></i>
       <span class="exp__num"><span>II</span></span>
-      <h3 class="exp__title">Tournaments</h3>
-      <p class="exp__text">A season of club competitions, from monthly medals to the annual championship.</p>
+      <h3 class="exp__title">Fourball</h3>
+      <p class="exp__text">Day two. Two players, each with their own ball. The better score on every hole counts.</p>
     </article>
     <article class="exp">
       <i class="vrule" aria-hidden="true"></i>
       <span class="exp__num"><span>III</span></span>
-      <h3 class="exp__title">Academy</h3>
-      <p class="exp__text">Coaching for juniors and adults, built on fundamentals and steady improvement.</p>
+      <h3 class="exp__title">Indies</h3>
+      <p class="exp__text">Day three. Individual match play, one against three. Every point is earned alone.</p>
     </article>
     <article class="exp">
       <i class="vrule" aria-hidden="true"></i>
       <span class="exp__num"><span>IV</span></span>
-      <h3 class="exp__title">Clubhouse</h3>
-      <p class="exp__text">Dining, a fireside lounge and the view. A warm place to end the round.</p>
+      <h3 class="exp__title">The Auction</h3>
+      <p class="exp__text">Every squad is built at the player auction, one handicap category at a time.</p>
     </article>
+  </div>
+</section>
+
+<!-- SQUAD -->
+<section id="squad" class="squad">
+  <div class="container squad__inner">
+    <div class="section-head">
+      <div class="section-head__title">
+        <span class="kicker" data-reveal="up">IV — The Pride</span>
+        <h2 class="display display--lg" data-split>
+          <span class="line"><span class="line-inner">Meet</span></span>
+          <span class="line"><span class="line-inner">the Pride</span></span>
+        </h2>
+      </div>
+      <p class="section-head__copy section-head__copy--dark" data-reveal="up">The players who take the course, the staff who prepare them and the owners who built the franchise.</p>
+    </div>
+
+    <div class="squad__group">
+      <div class="squad__head">
+        <h3 class="squad__title" data-reveal="up">Players</h3>
+        <span class="squad__count" data-reveal="up">14</span>
+        <i class="rule" data-reveal="rule"></i>
+      </div>
+      <div class="squad__grid">
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">01</span>
+            <span class="person__tag">Captain</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">Tharanga Gunasekera</h4>
+            <span class="person__role">Captain</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">02</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 1</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">03</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 2</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">04</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 2</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">05</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 3</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">06</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 3</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">07</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 4</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">08</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 4</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">09</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 5</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">10</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 5</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">11</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 6</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">12</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 6</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">13</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 7</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">14</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Player Name]</h4>
+            <span class="person__role">Handicap category 7</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="squad__group">
+      <div class="squad__head">
+        <h3 class="squad__title" data-reveal="up">Coaching Staff</h3>
+        <span class="squad__count" data-reveal="up">04</span>
+        <i class="rule" data-reveal="rule"></i>
+      </div>
+      <div class="squad__grid">
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">HC</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Coach Name]</h4>
+            <span class="person__role">Head Coach</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">AC</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Coach Name]</h4>
+            <span class="person__role">Assistant Coach</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">SC</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Coach Name]</h4>
+            <span class="person__role">Short-Game Coach</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">TM</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Manager Name]</h4>
+            <span class="person__role">Team Manager</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="squad__group">
+      <div class="squad__head">
+        <h3 class="squad__title" data-reveal="up">Owners</h3>
+        <span class="squad__count" data-reveal="up">02</span>
+        <i class="rule" data-reveal="rule"></i>
+      </div>
+      <div class="squad__grid">
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">OW</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Owner Name]</h4>
+            <span class="person__role">Franchise Owner</span>
+          </div>
+        </article>
+        <article class="person" data-reveal="up">
+          <div class="person__photo">
+            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
+            <span class="person__num">OW</span>
+          </div>
+          <div class="person__info">
+            <h4 class="person__name">[Owner Name]</h4>
+            <span class="person__role">Co-Owner</span>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- THE PANTHER CODE -->
 <section class="code dark" aria-label="The Panther Code">
   <div class="code__media">
-    <img src="/images/still-life.jpg" alt="">
+    <img src="/images/hero-hills.jpg" alt="">
   </div>
   <div class="code__shade"></div>
   <div class="code__card glass">
@@ -206,85 +470,47 @@
   </div>
 </section>
 
-<!-- EVENTS -->
-<section id="events" class="events container">
+<!-- SEASON 2 -->
+<section id="season" class="events container">
   <div class="section-head section-head--row">
     <div class="section-head__title">
-      <span class="kicker" data-reveal="up">IV — The Season</span>
+      <span class="kicker" data-reveal="up">V — Season 2</span>
       <h2 class="display display--lg" data-split>
-        <span class="line"><span class="line-inner">Calendar</span></span>
+        <span class="line"><span class="line-inner">The Defence</span></span>
       </h2>
     </div>
-    <a href="#events" class="link-line" data-reveal="up">Full season</a>
+    <a href="https://ceylongolfleague.com/" target="_blank" rel="noopener" class="link-line" data-reveal="up">Ceylon Golf League</a>
   </div>
   <div class="events__list">
     <i class="rule" data-reveal="rule"></i>
-    <a class="event" href="#membership" aria-label="Monthly Medal details">
-      <span class="event__date">[DD MMM]</span>
-      <span class="event__name">[Monthly Medal]</span>
-      <span class="event__meta">[Members · Stroke play]</span>
+    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Player Auction, 23 October 2026">
+      <span class="event__date">23 Oct</span>
+      <span class="event__name">Player Auction</span>
+      <span class="event__meta">The Atrium, Cinnamon Grand · Complete</span>
       <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <i class="rule event__rule"></i>
     </a>
-    <a class="event" href="#membership" aria-label="Junior Open Day details">
-      <span class="event__date">[DD MMM]</span>
-      <span class="event__name">[Junior Open Day]</span>
-      <span class="event__meta">[Academy · All levels]</span>
+    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day one, Foursomes, 8 January 2027">
+      <span class="event__date">08 Jan</span>
+      <span class="event__name">Day One · Foursomes</span>
+      <span class="event__meta">Royal Colombo Golf Club</span>
       <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <i class="rule event__rule"></i>
     </a>
-    <a class="event" href="#membership" aria-label="Club Championship details">
-      <span class="event__date">[DD MMM]</span>
-      <span class="event__name">[Club Championship]</span>
-      <span class="event__meta">[Members · 36 holes]</span>
+    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day two, Fourball, 9 January 2027">
+      <span class="event__date">09 Jan</span>
+      <span class="event__name">Day Two · Fourball</span>
+      <span class="event__meta">Royal Colombo Golf Club</span>
       <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <i class="rule event__rule"></i>
     </a>
-  </div>
-</section>
-
-<!-- MEMBERSHIP -->
-<section id="membership" class="membership dark">
-  <div class="membership__media">
-    <img src="/images/golfer-walk.jpg" alt="">
-  </div>
-  <div class="membership__shade"></div>
-  <div class="container membership__inner">
-    <div class="membership__intro">
-      <span class="kicker kicker--light" data-reveal="up">V — Membership</span>
-      <h2 class="display display--xl" data-split>
-        <span class="line"><span class="line-inner">Join</span></span>
-        <span class="line"><span class="line-inner">the Pride</span></span>
-      </h2>
-      <p class="section-head__copy" data-reveal="up">Membership is by application. Leave your details and the membership committee will be in touch personally.</p>
-    </div>
-    <form class="apply glass" novalidate>
-      <div class="apply__fields">
-        <span class="apply__title">Request an invitation</span>
-        <div class="field">
-          <label for="nep-name">Full name</label>
-          <input id="nep-name" name="name" type="text" autocomplete="name" required>
-          <i class="field__line"></i>
-        </div>
-        <div class="field">
-          <label for="nep-email">Email</label>
-          <input id="nep-email" name="email" type="email" autocomplete="email" required>
-          <i class="field__line"></i>
-        </div>
-        <div class="field">
-          <label for="nep-hcp">Handicap (optional)</label>
-          <input id="nep-hcp" name="handicap" type="text" inputmode="decimal">
-          <i class="field__line"></i>
-        </div>
-        <p class="apply__error" role="alert" hidden>Please add your name and a valid email.</p>
-        <button type="submit" class="btn-solid" data-magnetic><span>Submit application</span></button>
-      </div>
-      <div class="apply__done" hidden>
-        <img src="/images/panthers-logo.png" alt="">
-        <span class="apply__title">Thank you.</span>
-        <p>Your application has been received. The membership committee will be in touch personally.</p>
-      </div>
-    </form>
+    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day three, Indies, 10 January 2027">
+      <span class="event__date">10 Jan</span>
+      <span class="event__name">Day Three · Indies</span>
+      <span class="event__meta">Royal Colombo Golf Club · One vs three</span>
+      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <i class="rule event__rule"></i>
+    </a>
   </div>
 </section>
 
@@ -296,8 +522,8 @@
 
     <div class="footer__lead">
       <div class="footer__lead-copy">
-        <span class="kicker kicker--light" data-reveal="up">Enquiries</span>
-        <p class="footer__lead-line" data-reveal="up">Green fees, dining and private events — speak with the club directly.</p>
+        <span class="kicker kicker--light" data-reveal="up">Media &amp; Partners</span>
+        <p class="footer__lead-line" data-reveal="up">For press, sponsorship and partnerships, contact the team directly.</p>
       </div>
       <ul class="footer__contacts" data-reveal="up">
         <li class="footer__contact">
@@ -316,24 +542,24 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <img class="footer__logo" src="/images/panthers-logo.png" alt="Nuwara Eliya Panthers" data-reveal="up">
-        <p class="footer__tagline" data-reveal="up">A private golf club in the hill country of Sri Lanka, for those who play with patience and precision.</p>
+        <p class="footer__tagline" data-reveal="up">Inaugural Ceylon Golf League champions, playing for Nuwara Eliya and the hill country of Sri Lanka.</p>
       </div>
 
-      <nav class="footer__col" aria-label="Club" data-reveal="up">
-        <h2 class="footer__head">Club</h2>
-        <a href="#club">About</a>
-        <a href="#course">Course</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#events">Calendar</a>
-        <a href="#membership">Membership</a>
+      <nav class="footer__col" aria-label="Team" data-reveal="up">
+        <h2 class="footer__head">Team</h2>
+        <a href="#team">About</a>
+        <a href="#champions">Champions 2025</a>
+        <a href="#format">Format</a>
+        <a href="#squad">Squad</a>
+        <a href="#season">Season 2</a>
       </nav>
 
       <div class="footer__col" data-reveal="up">
-        <h2 class="footer__head">Visit</h2>
+        <h2 class="footer__head">Season 2</h2>
         <address class="footer__address">
-          [ADDRESS]<br>
-          Nuwara Eliya<br>
-          Sri Lanka
+          Royal Colombo Golf Club<br>
+          Colombo, Sri Lanka<br>
+          8–10 January 2027
         </address>
       </div>
 

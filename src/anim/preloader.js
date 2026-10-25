@@ -20,7 +20,7 @@ export function runPreloader() {
   const assetsReady = Promise.race([
     Promise.all([
       document.fonts ? document.fonts.ready : Promise.resolve(),
-      loadImage('/images/hero-hills.jpg'),
+      loadImage('/images/hero-champions.jpg'),
     ]),
     new Promise((r) => setTimeout(r, 4000)),
   ]);

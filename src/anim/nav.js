@@ -7,7 +7,7 @@ export function initNav() {
 
   // Stays fixed and visible at all times — only its glass tint deepens past the hero
   ScrollTrigger.create({
-    trigger: '#club',
+    trigger: '#team',
     start: 'top 90px',
     end: 'max',
     toggleClass: { targets: nav, className: 'is-solid' },

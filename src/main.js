@@ -42,19 +42,5 @@ if (animate) {
   window.addEventListener('load', () => ScrollTrigger.refresh());
 } else {
   document.querySelector('.preloader')?.remove();
-  initFormOnly();
 }
 
-/** Without motion the form still needs its submit handling. */
-function initFormOnly() {
-  const form = document.querySelector('.apply');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const ok = form.elements.name.value.trim() && /^\S+@\S+\.\S+$/.test(form.elements.email.value.trim());
-    form.querySelector('.apply__error').hidden = !!ok;
-    if (ok) {
-      form.querySelector('.apply__fields').hidden = true;
-      form.querySelector('.apply__done').hidden = false;
-    }
-  });
-}
