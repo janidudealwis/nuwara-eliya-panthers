@@ -12,6 +12,9 @@ import { initSections } from './anim/sections.js';
 import { initNav, initMagnetic } from './anim/nav.js';
 import { initCursor } from './anim/cursor.js';
 
+// Styles are loaded by now; reveal the page (see the inline style in the HTML head)
+document.documentElement.classList.add('ready');
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Reduced motion (or no class for any reason): leave the page static and fully visible.

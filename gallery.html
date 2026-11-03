@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Nuwara Eliya Panthers</title>
+  <meta name="description" content="Every photo from the Nuwara Eliya Panthers, inaugural Ceylon Golf League champions.">
+  <style>html{background:#07100C}html:not(.ready) body{visibility:hidden}</style>
+  <noscript><style>html:not(.ready) body{visibility:visible}</style></noscript>
+  <link rel="icon" type="image/png" href="/images/panthers-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap">
+  <script type="module" src="/src/gallery.js"></script>
+</head>
+<body class="gpage">
+
+<header class="gpage__bar">
+  <a href="/" class="gpage__brand">
+    <img src="/images/panthers-logo.png" alt="">
+    <span>Nuwara Eliya Panthers</span>
+  </a>
+  <a href="/#gallery" class="gpage__back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to home
+  </a>
+</header>
+
+<main class="container gpage__main">
+  <span class="kicker">Gallery</span>
+  <h1 class="display display--lg gpage__title">The Pride in Frame</h1>
+  <p class="gpage__count"><span id="gcount">0</span> photos</p>
+  <div class="gpage__grid" id="ggrid"></div>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb__btn lb__close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb__btn lb__prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <img class="lb__img" id="lbImg" alt="">
+  <button class="lb__btn lb__next" id="lbNext" aria-label="Next photo">›</button>
+  <span class="lb__count" id="lbCount"></span>
+</div>
+
+</body>
+</html>
