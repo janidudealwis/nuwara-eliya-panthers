@@ -11,9 +11,11 @@ import { initReveals } from './anim/reveals.js';
 import { initSections } from './anim/sections.js';
 import { initNav, initMagnetic } from './anim/nav.js';
 import { initCursor } from './anim/cursor.js';
+import { initSkeletons } from './skeleton.js';
 
 // Styles are loaded by now; reveal the page (see the inline style in the HTML head)
 document.documentElement.classList.add('ready');
+initSkeletons();
 
 gsap.registerPlugin(ScrollTrigger);
 

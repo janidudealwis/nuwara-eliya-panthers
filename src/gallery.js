@@ -2,6 +2,7 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/gallery.css';
 import { photos } from './gallery-list.js';
+import { initSkeletons } from './skeleton.js';
 
 // Styles are loaded by now; reveal the page (see the inline style in the HTML head)
 document.documentElement.classList.add('ready');
@@ -24,6 +25,7 @@ photos.forEach((p, i) => {
   frag.append(a);
 });
 grid.append(frag);
+initSkeletons(grid);
 
 const lb = document.getElementById('lb');
 const lbImg = document.getElementById('lbImg');
