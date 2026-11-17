@@ -1,685 +1,1206 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuwara Eliya Panthers — Ceylon Golf League Champions</title>
-  <meta name="description" content="Nuwara Eliya Panthers, inaugural Ceylon Golf League champions (2025). Meet the squad and follow the title defence in January 2027.">
-  <style>html{background:#07100C}html:not(.ready) body{visibility:hidden}</style>
-  <noscript><style>html:not(.ready) body{visibility:visible}</style></noscript>
-  <link rel="icon" type="image/png" href="/images/panthers-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap">
-  <link rel="preload" as="image" href="/images/hero-champions.jpg">
-  <script>
-    // Hide animated elements only when JS runs and motion is allowed (no-JS shows everything)
-    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-anim');
-  </script>
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuwara Eliya Panthers — Ceylon Golf League Champions</title>
+    <meta
+      name="description"
+      content="Nuwara Eliya Panthers, inaugural Ceylon Golf League champions (2025). Meet the squad and follow the title defence in January 2027."
+    />
+    <style>
+      html {
+        background: #07100c;
+      }
+      html:not(.ready) body {
+        visibility: hidden;
+      }
+    </style>
+    <noscript
+      ><style>
+        html:not(.ready) body {
+          visibility: visible;
+        }
+      </style></noscript
+    >
+    <link rel="icon" type="image/png" href="/images/panthers-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+    />
+    <link rel="preload" as="image" href="/images/hero-champions.jpg" />
+    <script>
+      // Hide animated elements only when JS runs and motion is allowed (no-JS shows everything)
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
+        document.documentElement.classList.add("js-anim");
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- Shared placeholder portrait for profile cards -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="ph" viewBox="0 0 200 250">
+        <circle cx="100" cy="92" r="38" fill="currentColor" />
+        <path d="M28 250c0-48 32-86 72-86s72 38 72 86z" fill="currentColor" />
+      </symbol>
+      <symbol id="logo-ph" viewBox="0 0 40 40">
+        <rect
+          x="2"
+          y="2"
+          width="36"
+          height="36"
+          rx="10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path d="M12 27l6-9 4 6 3-4 5 7z" fill="currentColor" />
+        <circle cx="26" cy="14" r="3" fill="currentColor" />
+      </symbol>
+    </svg>
 
-<!-- Shared placeholder portrait for profile cards -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="ph" viewBox="0 0 200 250">
-    <circle cx="100" cy="92" r="38" fill="currentColor"/>
-    <path d="M28 250c0-48 32-86 72-86s72 38 72 86z" fill="currentColor"/>
-  </symbol>
-  <symbol id="logo-ph" viewBox="0 0 40 40">
-    <rect x="2" y="2" width="36" height="36" rx="10" fill="none" stroke="currentColor" stroke-width="2"/>
-    <path d="M12 27l6-9 4 6 3-4 5 7z" fill="currentColor"/>
-    <circle cx="26" cy="14" r="3" fill="currentColor"/>
-  </symbol>
-</svg>
-
-<!-- PRELOADER -->
-<div class="preloader" aria-hidden="true">
-  <div class="preloader__inner">
-    <img class="preloader__logo" src="/images/panthers-logo.png" alt="">
-    <span class="preloader__name"><span>Nuwara Eliya Panthers</span></span>
-    <div class="preloader__bar"><span></span></div>
-    <span class="preloader__count">000</span>
-  </div>
-</div>
-
-<div class="progress" aria-hidden="true"><span></span></div>
-<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label">View</span></span></div>
-
-<!-- NAV -->
-<div class="nav-wrap">
-  <nav class="nav" aria-label="Main">
-    <a href="#top" class="nav__brand">
-      <img src="/images/panthers-logo.png" alt="">
-      <span>Nuwara Eliya Panthers</span>
-    </a>
-    <div class="nav__links">
-      <a href="#team" class="nav__link"><span data-text="Team">Team</span></a>
-      <a href="#champions" class="nav__link"><span data-text="Champions">Champions</span></a>
-      <a href="#format" class="nav__link"><span data-text="Format">Format</span></a>
-      <a href="#squad" class="nav__link"><span data-text="Squad">Squad</span></a>
-      <a href="#gallery" class="nav__link"><span data-text="Gallery">Gallery</span></a>
-      <a href="#season" class="nav__cta" data-magnetic>Season 2</a>
-    </div>
-  </nav>
-</div>
-
-<main>
-
-<!-- HERO -->
-<header id="top" class="hero">
-  <div class="hero__media">
-    <img src="/images/hero-champions.jpg" alt="Nuwara Eliya Panthers lifting the Ceylon Golf League trophy under stage lights and confetti">
-  </div>
-  <div class="hero__shade"></div>
-
-  <div class="hero__content">
-    <p class="eyebrow hero__eyebrow">Ceylon Golf League · Champions 2025</p>
-    <h1 class="hero__title" data-hero-title>
-      <span class="line"><span class="line-inner">Kings of</span></span>
-      <span class="line"><span class="line-inner">the Hill Country</span></span>
-    </h1>
-    <div class="hero__rule"></div>
-    <p class="hero__lead">The first champions of Sri Lanka's franchise golf league. Now the Panthers return to Royal Colombo to defend the crown.</p>
-    <a href="#squad" class="btn-glass hero__cta" data-magnetic>
-      <span>Meet the squad</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-  </div>
-
-  <div class="hero__stats-wrap">
-    <div class="hero__stats glass">
-      <div class="stat"><span class="stat__label">CGL 2025</span><span class="stat__value">Champions</span></div>
-      <div class="stat"><span class="stat__label">League points</span><span class="stat__value">24 · Season high</span></div>
-      <div class="stat"><span class="stat__label">Title defence</span><span class="stat__value">8–10 Jan 2027</span></div>
-    </div>
-  </div>
-
-  <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
-</header>
-
-<!-- TEAM -->
-<section id="team" class="club container">
-  <div class="club__intro">
-    <span class="kicker" data-reveal="up">I — The Team</span>
-    <p class="club__statement" data-words>Golf rewards patience, precision and respect. In the league's first season, the Panthers had all three, and finished on top.</p>
-  </div>
-  <div class="club__body">
-    <div class="club__media" data-reveal="image" data-cursor="View">
-      <img src="/images/still-life.jpg" alt="Golf iron, glove, ball and tee on green felt" data-inner>
-      <div class="club__card glass" data-reveal="up">
-        <span class="club__card-title">Captain Tharanga Gunasekara</span>
-        <span class="club__card-text">Led the Panthers to the inaugural Ceylon Golf League title in December 2025.</span>
+    <!-- PRELOADER -->
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <img class="preloader__logo" src="/images/panthers-logo.png" alt="" />
+        <span class="preloader__name"><span>Nuwara Eliya Panthers</span></span>
+        <div class="preloader__bar"><span></span></div>
+        <span class="preloader__count">000</span>
       </div>
     </div>
-    <div class="club__aside">
-      <p class="body-copy" data-reveal="up">Amid the cool, mist-wrapped hills of Nuwara Eliya, the Panthers bring a winning mindset and clinical precision of execution, with a calm composure that sets the bar for professionalism. They do not roar. They wait, calculate, and strike with intent. Fear the Focus. The Nuwara Eliya Panthers carry the hill country into the Ceylon Golf League, Sri Lanka's first franchise golf tournament. The league was founded by Mahela Jayawardene, Shamal Perera and Suhayb Sangani. Eight city franchises draft their squads at auction across seven handicap categories, then meet over three days of team match play.</p>
-      <ul class="values" data-stagger>
-        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Discipline</span><span class="values__note">On every shot</span></li>
-        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Composure</span><span class="values__note">When the match is tight</span></li>
-        <li class="values__row"><i class="rule" data-reveal="rule"></i><span class="values__name">Belonging</span><span class="values__note">To one Panthers pride</span></li>
-        <li class="values__end"><i class="rule" data-reveal="rule"></i></li>
-      </ul>
-      <a href="#champions" class="link-line" data-reveal="up">The 2025 title run</a>
-    </div>
-  </div>
-</section>
 
-<!-- CHAMPIONS -->
-<section id="champions" class="course dark">
-  <div class="orb orb--green" aria-hidden="true"></div>
-  <div class="orb orb--gold" aria-hidden="true"></div>
-  <div class="container course__inner">
-    <div class="section-head">
-      <div class="section-head__title">
-        <span class="kicker kicker--light" data-reveal="up">II — Champions 2025</span>
-        <h2 class="display display--xl" data-split>
-          <span class="line"><span class="line-inner">First to</span></span>
-          <span class="line"><span class="line-inner">the Crown</span></span>
-        </h2>
-      </div>
-      <p class="section-head__copy" data-reveal="up">Royal Colombo Golf Club, 5–7 December 2025. Seven rounds of foursomes, fourball and indies against seven other franchises. The Panthers finished with the most points in the league, six clear of runners-up Trinco Sharks on 18.</p>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__dot"></span
+      ><span class="cursor__ring"><span class="cursor__label">View</span></span>
     </div>
-    <div class="course__grid">
-      <figure class="frame" data-reveal="image" data-parallax="-0.06" data-cursor="View">
-        <img src="/images/hero-champions.jpg" alt="The Panthers raising the trophy" style="object-position: 46% 50%" data-inner>
-        <figcaption class="frame__cap glass"><span>The Trophy</span><span>RCGC · Dec 2025</span></figcaption>
-      </figure>
-      <div class="course__stats">
-        <div class="tile glass" data-reveal="up">
-          <span class="tile__label">League points</span>
-          <span class="tile__num" data-count>24</span>
-          <span class="tile__text">The highest total of the season</span>
+
+    <!-- NAV -->
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Main">
+        <a href="#top" class="nav__brand">
+          <img src="/images/panthers-logo.png" alt="" />
+          <span>Nuwara Eliya Panthers</span>
+        </a>
+        <div class="nav__links">
+          <a href="#team" class="nav__link"
+            ><span data-text="Team">Team</span></a
+          >
+          <a href="#champions" class="nav__link"
+            ><span data-text="Champions">Champions</span></a
+          >
+          <a href="#format" class="nav__link"
+            ><span data-text="Format">Format</span></a
+          >
+          <a href="#squad" class="nav__link"
+            ><span data-text="Squad">Squad</span></a
+          >
+          <a href="#gallery" class="nav__link"
+            ><span data-text="Gallery">Gallery</span></a
+          >
+          <a href="#season" class="nav__cta" data-magnetic>Season 2</a>
         </div>
-        <div class="tile glass" data-reveal="up">
-          <span class="tile__label">Record</span>
-          <span class="tile__num">3W · 2T</span>
-          <span class="tile__text">Three wins and two ties across seven rounds</span>
-        </div>
-        <div class="tile glass" data-reveal="up">
-          <span class="tile__label">Group stage</span>
-          <span class="tile__num" data-count>105</span>
-          <span class="tile__text">Points to finish top of Group B</span>
-        </div>
-      </div>
-      <figure class="frame" data-reveal="image" data-parallax="0.08" data-cursor="View">
-        <img src="/images/golfer-walk.jpg" alt="Golfer walking toward the hills" data-inner>
-        <figcaption class="frame__cap glass"><span>The Hill Country</span><span>Home of the Panthers</span></figcaption>
-      </figure>
-    </div>
-    <div class="champ-note glass" data-reveal="up">
-      <span class="champ-note__label">Beyond the trophy</span>
-      <p class="champ-note__text">The Panthers gave their entire prize purse to national flood relief.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FORMAT -->
-<section id="format" class="experiences container">
-  <div class="section-head">
-    <div class="section-head__title">
-      <span class="kicker" data-reveal="up">III — The Format</span>
-      <h2 class="display display--lg" data-split>
-        <span class="line"><span class="line-inner">Three Days,</span></span>
-        <span class="line"><span class="line-inner">One Crown</span></span>
-      </h2>
-    </div>
-    <p class="section-head__copy section-head__copy--dark" data-reveal="up">Eight city franchises. Squads built across seven handicap categories, in men's and women's divisions.</p>
-  </div>
-  <div class="exp-grid">
-    <i class="rule exp-grid__top" data-reveal="rule"></i>
-    <article class="exp">
-      <span class="exp__num"><span>I</span></span>
-      <h3 class="exp__title">Foursomes</h3>
-      <p class="exp__text">Day one. Two players, one ball, alternate shots. A test of partnership under pressure.</p>
-    </article>
-    <article class="exp">
-      <i class="vrule" aria-hidden="true"></i>
-      <span class="exp__num"><span>II</span></span>
-      <h3 class="exp__title">Fourball</h3>
-      <p class="exp__text">Day two. Two players, each with their own ball. The better score on every hole counts.</p>
-    </article>
-    <article class="exp">
-      <i class="vrule" aria-hidden="true"></i>
-      <span class="exp__num"><span>III</span></span>
-      <h3 class="exp__title">Indies</h3>
-      <p class="exp__text">Day three. Individual match play, one against three. Every point is earned alone.</p>
-    </article>
-  </div>
-</section>
-
-<!-- SQUAD -->
-<section id="squad" class="squad">
-  <div class="container squad__inner">
-    <div class="section-head">
-      <div class="section-head__title">
-        <span class="kicker" data-reveal="up">IV — The Pride</span>
-        <h2 class="display display--lg" data-split>
-          <span class="line"><span class="line-inner">Meet</span></span>
-          <span class="line"><span class="line-inner">the Pride</span></span>
-        </h2>
-      </div>
-      <p class="section-head__copy section-head__copy--dark" data-reveal="up">The nineteen players who carry the Panthers into Season 2 of the Ceylon Golf League.</p>
-    </div>
-
-    <div class="squad__group">
-      <div class="squad__head">
-        <h3 class="squad__title" data-reveal="up">Players</h3>
-        <span class="squad__count" data-reveal="up">19</span>
-        <i class="rule" data-reveal="rule"></i>
-      </div>
-      <div class="squad__grid">
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/tharanga.jpg?v=4" alt="Tharanga Gunasekara" loading="lazy">
-            <span class="person__num">01</span>
-            <span class="person__tag">Captain</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Tharanga Gunasekara</h4>
-            <span class="person__role">Captain</span>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/vinuda.jpg?v=2" alt="Vinuda Weerasinghe" loading="lazy">
-            <span class="person__num">02</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Vinuda Weerasinghe</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/mushfika.jpg?v=2" alt="Mushfika Muzammil" loading="lazy">
-            <span class="person__num">03</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Mushfika Muzammil</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/thiumi.jpg?v=2" alt="Thiumi Gunesekara" loading="lazy">
-            <span class="person__num">04</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Thiumi Gunesekara</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/dinara.jpg?v=2" alt="Dinara Karunasena" loading="lazy">
-            <span class="person__num">05</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Dinara Karunasena</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/nisal.jpg?v=2" alt="Nisal Hettiarachchi" loading="lazy">
-            <span class="person__num">06</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Nisal Hettiarachchi</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <img class="person__img" src="/images/players/sampath.jpg?v=2" alt="Sampath Hemachandra" loading="lazy">
-            <span class="person__num">07</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Sampath Hemachandra</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">08</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Aasiri Iddamalgoda</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">09</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Anashya Weerakody</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">10</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Anumi Karunatileke</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">11</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Aruna Jeewantha</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">12</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Chanaka Pererea</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">13</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Janeth Akmeemana</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">14</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Keya Abeyratne</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">15</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Manjula Lanerolle</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">16</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Priyath Wickrama</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">17</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Rosana Prasad</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">18</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Sam Perera</h4>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-            <span class="person__num">19</span>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Saneth Gamage</h4>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="squad__group">
-      <div class="squad__head">
-        <h3 class="squad__title" data-reveal="up">Coach &amp; Supporting Staff</h3>
-        <span class="squad__count" data-reveal="up">3</span>
-        <i class="rule" data-reveal="rule"></i>
-      </div>
-      <div class="squad__grid">
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Rick Currin</h4>
-            <span class="person__role">Coach</span>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Ranjula Mendis</h4>
-            <span class="person__role">Manager Golf</span>
-          </div>
-        </article>
-        <article class="person" data-reveal="up">
-          <div class="person__photo">
-            <svg class="person__ph" viewBox="0 0 200 250" aria-hidden="true"><use href="#ph"/></svg>
-          </div>
-          <div class="person__info">
-            <h4 class="person__name">Limali Panduwawala</h4>
-            <span class="person__role">Team Manager</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- THE PANTHER CODE -->
-<section class="code dark" aria-label="The Panther Code">
-  <div class="code__media">
-    <img src="/images/hero-hills.jpg" alt="">
-  </div>
-  <div class="code__shade"></div>
-  <div class="code__card glass">
-    <img class="code__logo" src="/images/panthers-logo.png" alt="">
-    <p class="code__lines">
-      <span class="code__line">Patience is a strength.</span>
-      <span class="code__line">Precision is a habit.</span>
-      <span class="code__line">Respect is the rule.</span>
-    </p>
-    <span class="eyebrow code__label">The Panther Code</span>
-  </div>
-</section>
-
-<!-- SEASON 2 -->
-<section id="season" class="events container">
-  <div class="section-head section-head--row">
-    <div class="section-head__title">
-      <span class="kicker" data-reveal="up">V — Season 2</span>
-      <h2 class="display display--lg" data-split>
-        <span class="line"><span class="line-inner">The Defence</span></span>
-      </h2>
-    </div>
-    <a href="https://ceylongolfleague.com/" target="_blank" rel="noopener" class="link-line" data-reveal="up">Ceylon Golf League</a>
-  </div>
-  <div class="events__list">
-    <i class="rule" data-reveal="rule"></i>
-    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day one, Foursomes, 8 January 2027">
-      <span class="event__date">08 Jan</span>
-      <span class="event__name">Day One · Foursomes</span>
-      <span class="event__meta">Royal Colombo Golf Club</span>
-      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      <i class="rule event__rule"></i>
-    </a>
-    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day two, Fourball, 9 January 2027">
-      <span class="event__date">09 Jan</span>
-      <span class="event__name">Day Two · Fourball</span>
-      <span class="event__meta">Royal Colombo Golf Club</span>
-      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      <i class="rule event__rule"></i>
-    </a>
-    <a class="event" href="https://ceylongolfleague.com/" target="_blank" rel="noopener" aria-label="Day three, Indies, 10 January 2027">
-      <span class="event__date">10 Jan</span>
-      <span class="event__name">Day Three · Indies</span>
-      <span class="event__meta">Royal Colombo Golf Club · One vs three</span>
-      <span class="event__btn" data-magnetic><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      <i class="rule event__rule"></i>
-    </a>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
-  <div class="container gallery__inner">
-    <div class="section-head">
-      <div class="section-head__title">
-        <span class="kicker" data-reveal="up">VI — Gallery</span>
-        <h2 class="display display--lg" data-split>
-          <span class="line"><span class="line-inner">The Pride</span></span>
-          <span class="line"><span class="line-inner">in Frame</span></span>
-        </h2>
-      </div>
-      <p class="section-head__copy section-head__copy--dark" data-reveal="up">Moments from the course, the auction and the title run.</p>
-    </div>
-    <div class="gallery__grid">
-      <a class="gallery__item" href="/gallery.html#a-_MSP5039" data-reveal="up"><img src="/images/gallery/a-_MSP5039.jpg" alt="Nuwara Eliya Panthers photo 1" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#a-_MSP5302" data-reveal="up"><img src="/images/gallery/a-_MSP5302.jpg" alt="Nuwara Eliya Panthers photo 2" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#a-_MSP5394" data-reveal="up"><img src="/images/gallery/a-_MSP5394.jpg" alt="Nuwara Eliya Panthers photo 3" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#b-_MSP4544" data-reveal="up"><img src="/images/gallery/b-_MSP4544.jpg" alt="Nuwara Eliya Panthers photo 4" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#b-_MSP4720" data-reveal="up"><img src="/images/gallery/b-_MSP4720.jpg" alt="Nuwara Eliya Panthers photo 5" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#b-_MSP4849" data-reveal="up"><img src="/images/gallery/b-_MSP4849.jpg" alt="Nuwara Eliya Panthers photo 6" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#c-_MSP5548" data-reveal="up"><img src="/images/gallery/c-_MSP5548.jpg" alt="Nuwara Eliya Panthers photo 7" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#c-_MSP5800" data-reveal="up"><img src="/images/gallery/c-_MSP5800.jpg" alt="Nuwara Eliya Panthers photo 8" loading="lazy"></a>
-      <a class="gallery__item" href="/gallery.html#c-_MSP6337" data-reveal="up"><img src="/images/gallery/c-_MSP6337.jpg" alt="Nuwara Eliya Panthers photo 9" loading="lazy"></a>
-    </div>
-    <a href="/gallery.html" class="link-line gallery__more" data-reveal="up">View all 390 photos</a>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section id="partners" class="sponsors">
-  <div class="container sponsors__inner">
-    <div class="sponsors__head">
-      <span class="kicker" data-reveal="up">VII — Partners</span>
-      <h2 class="sponsors__title" data-split>
-        <span class="line"><span class="line-inner">Who Stands</span></span>
-        <span class="line"><span class="line-inner">With Us</span></span>
-      </h2>
-    </div>
-    <i class="rule" data-reveal="rule"></i>
-    <ul class="sponsors__main">
-      <li class="sponsor sponsor--main" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Title Partner</span>
-      </li>
-      <li class="sponsor sponsor--main" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Event Partner</span>
-      </li>
-    </ul>
-    <ul class="sponsors__list">
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Event Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Radio Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Hospitality Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Telco Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Automobile Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Jewellery Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Finance Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Broadcast Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"><img src="/images/sponsors/media.png" alt="Updayte logo" loading="lazy"></span>
-        <span class="sponsor__type">Media Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Real Estate Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Software Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Sustainability Partner</span>
-      </li>
-      <li class="sponsor" data-reveal="up">
-        <span class="sponsor__logo"></span>
-        <span class="sponsor__type">Clothing Partner</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer__inner">
-
-    <div class="footer__lead">
-      <div class="footer__lead-copy">
-        <span class="kicker kicker--light" data-reveal="up">Media &amp; Partners</span>
-        <p class="footer__lead-line" data-reveal="up">For press, sponsorship and partnerships, contact the team directly.</p>
-      </div>
-      <ul class="footer__contacts" data-reveal="up">
-        <li class="footer__contact">
-          <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="footer__contact-text"><span class="footer__contact-label">Telephone</span><a href="tel:+94773034353">+94 77 303 4353</a></span>
-        </li>
-        <li class="footer__contact">
-          <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <span class="footer__contact-text"><span class="footer__contact-label">Email</span><a href="mailto:ranjula.s.mendis@gmail.com">ranjula.s.mendis@gmail.com</a></span>
-        </li>
-      </ul>
-    </div>
-
-    <i class="rule rule--light" data-reveal="rule"></i>
-
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <img class="footer__logo" src="/images/panthers-logo.png" alt="Nuwara Eliya Panthers" data-reveal="up">
-        <p class="footer__tagline" data-reveal="up">Inaugural Ceylon Golf League champions, playing for Nuwara Eliya and the hill country of Sri Lanka.</p>
-      </div>
-
-      <nav class="footer__col" aria-label="Team" data-reveal="up">
-        <h2 class="footer__head">Team</h2>
-        <a href="#team">About</a>
-        <a href="#champions">Champions 2025</a>
-        <a href="#format">Format</a>
-        <a href="#squad">Squad</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#season">Season 2</a>
-        <a href="#partners">Partners</a>
       </nav>
-
-      <div class="footer__col" data-reveal="up">
-        <h2 class="footer__head">Season 2</h2>
-        <address class="footer__address">
-          Royal Colombo Golf Club<br>
-          Colombo, Sri Lanka<br>
-          8–10 January 2027
-        </address>
-      </div>
-
-      <div class="footer__col" data-reveal="up">
-        <h2 class="footer__head">Follow</h2>
-        <a class="footer__social" href="#top">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          Instagram
-        </a>
-        <a class="footer__social" href="#top">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          Facebook
-        </a>
-      </div>
     </div>
 
-    <p class="footer__word" aria-hidden="true">PANTHERS</p>
+    <main>
+      <!-- HERO -->
+      <header id="top" class="hero">
+        <div class="hero__media">
+          <img
+            src="/images/hero-champions.jpg"
+            alt="Nuwara Eliya Panthers lifting the Ceylon Golf League trophy under stage lights and confetti"
+          />
+        </div>
+        <div class="hero__shade"></div>
 
-    <div class="footer__bottom">
-      <span>© 2026 Nuwara Eliya Panthers</span>
-      <span class="footer__site">www.nuwaraeliyapanthers.lk</span>
-      <a href="#top" class="footer__totop">
-        Back to top
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</footer>
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">
+            Ceylon Golf League · Champions 2025
+          </p>
+          <h1 class="hero__title" data-hero-title>
+            <span class="line"><span class="line-inner">Kings of</span></span>
+            <span class="line"
+              ><span class="line-inner">the Hill Country</span></span
+            >
+          </h1>
+          <div class="hero__rule"></div>
+          <p class="hero__lead">
+            The first champions of Sri Lanka's franchise golf league. Now the
+            Panthers return to Royal Colombo to defend the crown.
+          </p>
+          <a href="#squad" class="btn-glass hero__cta" data-magnetic>
+            <span>Meet the squad</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
 
-</body>
+        <div class="hero__stats-wrap">
+          <div class="hero__stats glass">
+            <div class="stat">
+              <span class="stat__label">CGL 2025</span
+              ><span class="stat__value">Champions</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">League points</span
+              ><span class="stat__value">24 · Season high</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Title defence</span
+              ><span class="stat__value">8–10 Jan 2027</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span><i></i>
+        </div>
+      </header>
+
+      <!-- TEAM -->
+      <section id="team" class="club container">
+        <div class="club__intro">
+          <span class="kicker" data-reveal="up">I — The Team</span>
+          <p class="club__statement" data-words>
+            Golf rewards patience, precision and respect. In the league's first
+            season, the Panthers had all three, and finished on top.
+          </p>
+        </div>
+        <div class="club__body">
+          <div class="club__media" data-reveal="image" data-cursor="View">
+            <img
+              src="/images/still-life.jpg"
+              alt="Golf iron, glove, ball and tee on green felt"
+              data-inner
+            />
+            <div class="club__card glass" data-reveal="up">
+              <span class="club__card-title">Captain Tharanga Gunasekara</span>
+              <span class="club__card-text"
+                >Led the Panthers to the inaugural Ceylon Golf League title in
+                December 2025.</span
+              >
+            </div>
+          </div>
+          <div class="club__aside">
+            <p class="body-copy" data-reveal="up">
+              Amid the cool, mist-wrapped hills of Nuwara Eliya, the Panthers
+              bring a winning mindset and clinical precision of execution, with
+              a calm composure that sets the bar for professionalism. They do
+              not roar. They wait, calculate, and strike with intent. Fear the
+              Focus. The Nuwara Eliya Panthers carry the hill country into the
+              Ceylon Golf League, Sri Lanka's first franchise golf tournament.
+              The league was founded by Mahela Jayawardene, Shamal Perera and
+              Suhayb Sangani. Eight city franchises draft their squads at
+              auction across seven handicap categories, then meet over three
+              days of team match play.
+            </p>
+            <ul class="values" data-stagger>
+              <li class="values__row">
+                <i class="rule" data-reveal="rule"></i
+                ><span class="values__name">Discipline</span
+                ><span class="values__note">On every shot</span>
+              </li>
+              <li class="values__row">
+                <i class="rule" data-reveal="rule"></i
+                ><span class="values__name">Composure</span
+                ><span class="values__note">When the match is tight</span>
+              </li>
+              <li class="values__row">
+                <i class="rule" data-reveal="rule"></i
+                ><span class="values__name">Belonging</span
+                ><span class="values__note">To one Panthers pride</span>
+              </li>
+              <li class="values__end">
+                <i class="rule" data-reveal="rule"></i>
+              </li>
+            </ul>
+            <a href="#champions" class="link-line" data-reveal="up"
+              >The 2025 title run</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAMPIONS -->
+      <section id="champions" class="course dark">
+        <div class="orb orb--green" aria-hidden="true"></div>
+        <div class="orb orb--gold" aria-hidden="true"></div>
+        <div class="container course__inner">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="kicker kicker--light" data-reveal="up"
+                >II — Champions 2025</span
+              >
+              <h2 class="display display--xl" data-split>
+                <span class="line"
+                  ><span class="line-inner">First to</span></span
+                >
+                <span class="line"
+                  ><span class="line-inner">the Crown</span></span
+                >
+              </h2>
+            </div>
+            <p class="section-head__copy" data-reveal="up">
+              Royal Colombo Golf Club, 5–7 December 2025. Seven rounds of
+              foursomes, fourball and indies against seven other franchises. The
+              Panthers finished with the most points in the league, six clear of
+              runners-up Trinco Sharks on 18.
+            </p>
+          </div>
+          <div class="course__grid">
+            <figure
+              class="frame"
+              data-reveal="image"
+              data-parallax="-0.06"
+              data-cursor="View"
+            >
+              <img
+                src="/images/hero-champions.jpg"
+                alt="The Panthers raising the trophy"
+                style="object-position: 46% 50%"
+                data-inner
+              />
+              <figcaption class="frame__cap glass">
+                <span>The Trophy</span><span>RCGC · Dec 2025</span>
+              </figcaption>
+            </figure>
+            <div class="course__stats">
+              <div class="tile glass" data-reveal="up">
+                <span class="tile__label">League points</span>
+                <span class="tile__num" data-count>24</span>
+                <span class="tile__text">The highest total of the season</span>
+              </div>
+              <div class="tile glass" data-reveal="up">
+                <span class="tile__label">Record</span>
+                <span class="tile__num">3W · 2T</span>
+                <span class="tile__text"
+                  >Three wins and two ties across seven rounds</span
+                >
+              </div>
+              <div class="tile glass" data-reveal="up">
+                <span class="tile__label">Group stage</span>
+                <span class="tile__num" data-count>105</span>
+                <span class="tile__text">Points to finish top of Group B</span>
+              </div>
+            </div>
+            <figure
+              class="frame"
+              data-reveal="image"
+              data-parallax="0.08"
+              data-cursor="View"
+            >
+              <img
+                src="/images/golfer-walk.jpg"
+                alt="Golfer walking toward the hills"
+                data-inner
+              />
+              <figcaption class="frame__cap glass">
+                <span>The Hill Country</span><span>Home of the Panthers</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="champ-note glass" data-reveal="up">
+            <span class="champ-note__label">Beyond the trophy</span>
+            <p class="champ-note__text">
+              The Panthers gave their entire prize purse to national flood
+              relief.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAT -->
+      <section id="format" class="experiences container">
+        <div class="section-head">
+          <div class="section-head__title">
+            <span class="kicker" data-reveal="up">III — The Format</span>
+            <h2 class="display display--lg" data-split>
+              <span class="line"
+                ><span class="line-inner">Three Days,</span></span
+              >
+              <span class="line"
+                ><span class="line-inner">One Crown</span></span
+              >
+            </h2>
+          </div>
+          <p
+            class="section-head__copy section-head__copy--dark"
+            data-reveal="up"
+          >
+            Eight city franchises. Squads built across seven handicap
+            categories, in men's and women's divisions.
+          </p>
+        </div>
+        <div class="exp-grid">
+          <i class="rule exp-grid__top" data-reveal="rule"></i>
+          <article class="exp">
+            <span class="exp__num"><span>I</span></span>
+            <h3 class="exp__title">Foursomes</h3>
+            <p class="exp__text">
+              Day one. Two players, one ball, alternate shots. A test of
+              partnership under pressure.
+            </p>
+          </article>
+          <article class="exp">
+            <i class="vrule" aria-hidden="true"></i>
+            <span class="exp__num"><span>II</span></span>
+            <h3 class="exp__title">Fourball</h3>
+            <p class="exp__text">
+              Day two. Two players, each with their own ball. The better score
+              on every hole counts.
+            </p>
+          </article>
+          <article class="exp">
+            <i class="vrule" aria-hidden="true"></i>
+            <span class="exp__num"><span>III</span></span>
+            <h3 class="exp__title">Indies</h3>
+            <p class="exp__text">
+              Day three. Individual match play, one against three. Every point
+              is earned alone.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SQUAD -->
+      <section id="squad" class="squad">
+        <div class="container squad__inner">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="kicker" data-reveal="up">IV — The Pride</span>
+              <h2 class="display display--lg" data-split>
+                <span class="line"><span class="line-inner">Meet</span></span>
+                <span class="line"
+                  ><span class="line-inner">the Pride</span></span
+                >
+              </h2>
+            </div>
+            <p
+              class="section-head__copy section-head__copy--dark"
+              data-reveal="up"
+            >
+              The nineteen players who carry the Panthers into Season 2 of the
+              Ceylon Golf League.
+            </p>
+          </div>
+
+          <div class="squad__group">
+            <div class="squad__head">
+              <h3 class="squad__title" data-reveal="up">Players</h3>
+              <span class="squad__count" data-reveal="up">19</span>
+              <i class="rule" data-reveal="rule"></i>
+            </div>
+            <div class="squad__grid">
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/tharanga.jpg?v=4"
+                    alt="Tharanga Gunasekara"
+                    loading="lazy"
+                  />
+                  <span class="person__num">01</span>
+                  <span class="person__tag">Captain</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Tharanga Gunasekara</h4>
+                  <span class="person__role">Captain</span>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/vinuda.jpg?v=2"
+                    alt="Vinuda Weerasinghe"
+                    loading="lazy"
+                  />
+                  <span class="person__num">02</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Vinuda Weerasinghe</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/mushfika.jpg?v=2"
+                    alt="Mushfika Muzammil"
+                    loading="lazy"
+                  />
+                  <span class="person__num">03</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Mushfika Muzammil</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/thiumi.jpg?v=2"
+                    alt="Thiumi Gunesekara"
+                    loading="lazy"
+                  />
+                  <span class="person__num">04</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Thiumi Gunesekara</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/dinara.jpg?v=2"
+                    alt="Dinara Karunasena"
+                    loading="lazy"
+                  />
+                  <span class="person__num">05</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Dinara Karunasena</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/nisal.jpg?v=2"
+                    alt="Nisal Hettiarachchi"
+                    loading="lazy"
+                  />
+                  <span class="person__num">06</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Nisal Hettiarachchi</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img
+                    class="person__img"
+                    src="/images/players/sampath.jpg?v=2"
+                    alt="Sampath Hemachandra"
+                    loading="lazy"
+                  />
+                  <span class="person__num">07</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Sampath Hemachandra</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">08</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Aasiri Iddamalgoda</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">09</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Anashya Weerakody</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">10</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Anumi Karunatileke</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">11</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Aruna Jeewantha</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">12</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Chanaka Pererea</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">13</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Janeth Akmeemana</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">14</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Keya Abeyratne</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">15</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Manjula Lanerolle</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img class="person__img" src="/images/players/priyath.png" alt="Priyath Wickrama" loading="lazy">
+                  <span class="person__num">16</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Priyath Wickrama</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">17</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Rosana Prasad</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <img class="person__img" src="/images/players/sam.png" alt="Sam Perera" loading="lazy">
+                  <span class="person__num">18</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Sam Perera</h4>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                  <span class="person__num">19</span>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Saneth Gamage</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="squad__group">
+            <div class="squad__head">
+              <h3 class="squad__title" data-reveal="up">
+                Coach &amp; Supporting Staff
+              </h3>
+              <span class="squad__count" data-reveal="up">3</span>
+              <i class="rule" data-reveal="rule"></i>
+            </div>
+            <div class="squad__grid">
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Rick Currin</h4>
+                  <span class="person__role">Coach</span>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Ranjula Mendis</h4>
+                  <span class="person__role">Manager Golf</span>
+                </div>
+              </article>
+              <article class="person" data-reveal="up">
+                <div class="person__photo">
+                  <svg
+                    class="person__ph"
+                    viewBox="0 0 200 250"
+                    aria-hidden="true"
+                  >
+                    <use href="#ph" />
+                  </svg>
+                </div>
+                <div class="person__info">
+                  <h4 class="person__name">Limali Panduwawala</h4>
+                  <span class="person__role">Team Manager</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE PANTHER CODE -->
+      <section class="code dark" aria-label="The Panther Code">
+        <div class="code__media">
+          <img src="/images/hero-hills.jpg" alt="" />
+        </div>
+        <div class="code__shade"></div>
+        <div class="code__card glass">
+          <img class="code__logo" src="/images/panthers-logo.png" alt="" />
+          <p class="code__lines">
+            <span class="code__line">Patience is a strength.</span>
+            <span class="code__line">Precision is a habit.</span>
+            <span class="code__line">Respect is the rule.</span>
+          </p>
+          <span class="eyebrow code__label">The Panther Code</span>
+        </div>
+      </section>
+
+      <!-- SEASON 2 -->
+      <section id="season" class="events container">
+        <div class="section-head section-head--row">
+          <div class="section-head__title">
+            <span class="kicker" data-reveal="up">V — Season 2</span>
+            <h2 class="display display--lg" data-split>
+              <span class="line"
+                ><span class="line-inner">The Defence</span></span
+              >
+            </h2>
+          </div>
+          <a
+            href="https://ceylongolfleague.com/"
+            target="_blank"
+            rel="noopener"
+            class="link-line"
+            data-reveal="up"
+            >Ceylon Golf League</a
+          >
+        </div>
+        <div class="events__list">
+          <i class="rule" data-reveal="rule"></i>
+          <a
+            class="event"
+            href="https://ceylongolfleague.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Day one, Foursomes, 8 January 2027"
+          >
+            <span class="event__date">08 Jan</span>
+            <span class="event__name">Day One · Foursomes</span>
+            <span class="event__meta">Royal Colombo Golf Club</span>
+            <span class="event__btn" data-magnetic
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+            <i class="rule event__rule"></i>
+          </a>
+          <a
+            class="event"
+            href="https://ceylongolfleague.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Day two, Fourball, 9 January 2027"
+          >
+            <span class="event__date">09 Jan</span>
+            <span class="event__name">Day Two · Fourball</span>
+            <span class="event__meta">Royal Colombo Golf Club</span>
+            <span class="event__btn" data-magnetic
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+            <i class="rule event__rule"></i>
+          </a>
+          <a
+            class="event"
+            href="https://ceylongolfleague.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Day three, Indies, 10 January 2027"
+          >
+            <span class="event__date">10 Jan</span>
+            <span class="event__name">Day Three · Indies</span>
+            <span class="event__meta"
+              >Royal Colombo Golf Club · One vs three</span
+            >
+            <span class="event__btn" data-magnetic
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+            <i class="rule event__rule"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="gallery">
+        <div class="container gallery__inner">
+          <div class="section-head">
+            <div class="section-head__title">
+              <span class="kicker" data-reveal="up">VI — Gallery</span>
+              <h2 class="display display--lg" data-split>
+                <span class="line"
+                  ><span class="line-inner">The Pride</span></span
+                >
+                <span class="line"
+                  ><span class="line-inner">in Frame</span></span
+                >
+              </h2>
+            </div>
+            <p
+              class="section-head__copy section-head__copy--dark"
+              data-reveal="up"
+            >
+              Moments from the course, the auction and the title run.
+            </p>
+          </div>
+          <div class="gallery__grid">
+            <a
+              class="gallery__item"
+              href="/gallery.html#a-_MSP5039"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/a-_MSP5039.jpg"
+                alt="Nuwara Eliya Panthers photo 1"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#a-_MSP5302"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/a-_MSP5302.jpg"
+                alt="Nuwara Eliya Panthers photo 2"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#a-_MSP5394"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/a-_MSP5394.jpg"
+                alt="Nuwara Eliya Panthers photo 3"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#b-_MSP4544"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/b-_MSP4544.jpg"
+                alt="Nuwara Eliya Panthers photo 4"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#b-_MSP4720"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/b-_MSP4720.jpg"
+                alt="Nuwara Eliya Panthers photo 5"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#b-_MSP4849"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/b-_MSP4849.jpg"
+                alt="Nuwara Eliya Panthers photo 6"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#c-_MSP5548"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/c-_MSP5548.jpg"
+                alt="Nuwara Eliya Panthers photo 7"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#c-_MSP5800"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/c-_MSP5800.jpg"
+                alt="Nuwara Eliya Panthers photo 8"
+                loading="lazy"
+            /></a>
+            <a
+              class="gallery__item"
+              href="/gallery.html#c-_MSP6337"
+              data-reveal="up"
+              ><img
+                src="/images/gallery/c-_MSP6337.jpg"
+                alt="Nuwara Eliya Panthers photo 9"
+                loading="lazy"
+            /></a>
+          </div>
+          <a
+            href="/gallery.html"
+            class="link-line gallery__more"
+            data-reveal="up"
+            >View all 390 photos</a
+          >
+        </div>
+      </section>
+
+      <!-- PARTNERS -->
+      <section id="partners" class="sponsors">
+        <div class="container sponsors__inner">
+          <div class="sponsors__head">
+            <span class="kicker" data-reveal="up">VII — Partners</span>
+            <h2 class="sponsors__title" data-split>
+              <span class="line"
+                ><span class="line-inner">Who Stands</span></span
+              >
+              <span class="line"><span class="line-inner">With Us</span></span>
+            </h2>
+          </div>
+          <i class="rule" data-reveal="rule"></i>
+          <ul class="sponsors__main">
+            <li class="sponsor sponsor--main" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Title Partner</span>
+            </li>
+            <li class="sponsor sponsor--main" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Event Partner</span>
+            </li>
+          </ul>
+          <ul class="sponsors__list">
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Event Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Radio Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Hospitality Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Telco Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Automobile Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Jewellery Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Finance Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Broadcast Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"
+                ><img
+                  src="/images/sponsors/media.png"
+                  alt="Updayte logo"
+                  loading="lazy"
+              /></span>
+              <span class="sponsor__type">Media Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Real Estate Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Software Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Sustainability Partner</span>
+            </li>
+            <li class="sponsor" data-reveal="up">
+              <span class="sponsor__logo"></span>
+              <span class="sponsor__type">Clothing Partner</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__lead">
+          <div class="footer__lead-copy">
+            <span class="kicker kicker--light" data-reveal="up"
+              >Media &amp; Partners</span
+            >
+            <p class="footer__lead-line" data-reveal="up">
+              For press, sponsorship and partnerships, contact the team
+              directly.
+            </p>
+          </div>
+          <ul class="footer__contacts" data-reveal="up">
+            <li class="footer__contact">
+              <svg
+                class="footer__contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <span class="footer__contact-text"
+                ><span class="footer__contact-label">Telephone</span
+                ><a href="tel:+94773034353">+94 77 303 4353</a></span
+              >
+            </li>
+            <li class="footer__contact">
+              <svg
+                class="footer__contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span class="footer__contact-text"
+                ><span class="footer__contact-label">Email</span
+                ><a href="mailto:ranjula.s.mendis@gmail.com"
+                  >ranjula.s.mendis@gmail.com</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <i class="rule rule--light" data-reveal="rule"></i>
+
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img
+              class="footer__logo"
+              src="/images/panthers-logo.png"
+              alt="Nuwara Eliya Panthers"
+              data-reveal="up"
+            />
+            <p class="footer__tagline" data-reveal="up">
+              Inaugural Ceylon Golf League champions, playing for Nuwara Eliya
+              and the hill country of Sri Lanka.
+            </p>
+          </div>
+
+          <nav class="footer__col" aria-label="Team" data-reveal="up">
+            <h2 class="footer__head">Team</h2>
+            <a href="#team">About</a>
+            <a href="#champions">Champions 2025</a>
+            <a href="#format">Format</a>
+            <a href="#squad">Squad</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#season">Season 2</a>
+            <a href="#partners">Partners</a>
+          </nav>
+
+          <div class="footer__col" data-reveal="up">
+            <h2 class="footer__head">Season 2</h2>
+            <address class="footer__address">
+              Royal Colombo Golf Club<br />
+              Colombo, Sri Lanka<br />
+              8–10 January 2027
+            </address>
+          </div>
+
+          <div class="footer__col" data-reveal="up">
+            <h2 class="footer__head">Follow</h2>
+            <a class="footer__social" href="#top">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              Instagram
+            </a>
+            <a class="footer__social" href="#top">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__word" aria-hidden="true">PANTHERS</p>
+
+        <div class="footer__bottom">
+          <span>© 2026 Nuwara Eliya Panthers</span>
+          <span class="footer__site">www.nuwaraeliyapanthers.lk</span>
+          <a href="#top" class="footer__totop">
+            Back to top
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
