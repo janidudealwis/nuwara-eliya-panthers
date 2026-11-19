@@ -486,11 +486,13 @@
 .sponsor__logo {
   width: 100%; max-width: 200px; height: 96px; padding: 16px 20px;
   display: flex; align-items: center; justify-content: center;
-  border-radius: 16px; background: #fff; border: 1px solid var(--line-dark);
+  border-radius: 16px; overflow: hidden;
+  background: #fff; border: 1px solid var(--line-dark);
   transition: border-color 0.6s var(--ease-out), transform 0.6s var(--ease-out);
 }
 .sponsor__logo--dark { background: var(--deep); border-color: transparent; }
 .sponsor__logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.sponsor__img--granbell { transform: scale(2.25); }
 .sponsor:hover .sponsor__logo { border-color: var(--green); transform: translateY(-3px); }
 /* Title and event partners lead on their own row, at a larger size */
 .sponsors__main {
@@ -634,6 +636,9 @@
   padding: 4px 9px; border-radius: 999px;
   background: rgba(10, 20, 14, 0.62); color: rgba(244, 242, 236, 0.9);
 }
+.owners__grid .person:nth-child(1) .person__img { object-position: 50% 70%; }
+.owners__grid .person:nth-child(2) .person__img { object-position: 50% 70%; }
+.owners__grid .person:nth-child(3) .person__img { object-position: 50% 25%; }
 
 /* ───────── GALLERY ───────── */
 .gallery { background: var(--paper); }
