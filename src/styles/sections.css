@@ -1417,6 +1417,18 @@
   object-position: 50% 100%;
   transform: scale(1.03);
 }
+.staff__grid .person:nth-child(2):hover .person__img {
+  transform: scale(1.07);
+}
+.limali__photo {
+  background: #fff;
+}
+.limali__photo .limali__img {
+  transform: translateY(34px);
+}
+.person:hover .limali__photo .limali__img {
+  transform: translateY(34px) scale(1.04);
+}
 .roshana__photo {
   background: #fff;
 }
@@ -1426,6 +1438,9 @@
 .thiumi__img {
   object-position: 50% 48%;
   transform: translateY(32px) scale(1.2);
+}
+.person:hover .thiumi__img {
+  transform: translateY(32px) scale(1.24);
 }
 
 /* ───────── GALLERY ───────── */
