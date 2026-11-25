@@ -1435,6 +1435,18 @@
 .roshana__img {
   transform: scale(0.96);
 }
+.sam__img {
+  transform: scale(1.1);
+}
+.saneth__img {
+  transform: scale(1.18);
+}
+.person:hover .sam__img {
+  transform: scale(1.14);
+}
+.person:hover .saneth__img {
+  transform: scale(1.22);
+}
 .thiumi__img {
   object-position: 50% 48%;
   transform: translateY(32px) scale(1.2);
